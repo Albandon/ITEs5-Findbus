@@ -9,17 +9,16 @@ public class Trasa {
 	 * @param czas
 	 */
 	public Trasa(Przystanek[] przystanki, int[] czas) {
-		// TODO - implement Trasa.Trasa
-		throw new UnsupportedOperationException();
+		this.przystanki = przystanki;
+		this.czas = czas;
 	}
 
 	/**
 	 * 
 	 * @param przystanek
 	 */
-	public Przystanek getPrzystanek(Przystanek przystanek) {
-		// TODO - implement Trasa.getPrzystanek
-		throw new UnsupportedOperationException();
+	public Przystanek[] getPrzystanki () {
+		return this.przystanki;
 	}
 
 	/**
@@ -32,8 +31,7 @@ public class Trasa {
 	}
 
 	public int getCzas() {
-		// TODO - implement Trasa.getCzas
-		throw new UnsupportedOperationException();
+		return this.czas[this.czas.length-1] - this.czas[0];
 	}
 
 	/**

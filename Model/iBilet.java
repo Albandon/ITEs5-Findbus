@@ -12,6 +12,7 @@ public interface iBilet {
 
 	float getCena();
 
-	float getZnizka();
-
+	int getZnizka();
+	@Override
+	boolean equals(Object obj);
 }

@@ -4,15 +4,16 @@ public class BiletNormalny implements iBilet {
 	private int id;
 	private float cena;
 
-	/**
+    /**
 	 * 
 	 * @param czas
 	 * @param id
 	 * @param cena
 	 */
-	public void Bilet(int czas, int id, float cena) {
-		// TODO - implement BiletNormalny.Bilet
-		throw new UnsupportedOperationException();
+	public BiletNormalny(int czas, int id, float cena) {
+		this.czas = czas;
+		this.id = id;
+		this.cena = cena;
 	}
 
 	/**
@@ -28,17 +29,23 @@ public class BiletNormalny implements iBilet {
 	}
 
 	public int getID() {
-		// TODO - implement BiletNormalny.getID
-		throw new UnsupportedOperationException();
+		return this.id;
 	}
 
 	public float getCena() {
 		return this.cena;
 	}
 
-	public float getZnizka() {
-		// TODO - implement BiletNormalny.getZnizka
-		throw new UnsupportedOperationException();
+	public int getZnizka() {
+		return 0;
+	}
+	@Override
+	public boolean equals(Object o) {
+		if ( !(o instanceof iBilet)) {
+			return false;
+		}
+		BiletNormalny p = (BiletNormalny)o;
+		return this.id == p.id;
 	}
 
 }

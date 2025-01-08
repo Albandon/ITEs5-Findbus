@@ -8,8 +8,7 @@ public class FabrykaBiletowNormalnych extends FabrykaBiletow {
 	 * @param znizka
 	 */
 	public iBilet createBilet(int czas, int id, float cena, float znizka) {
-		// TODO - implement FabrykaBiletowNormalnych.createBilet
-		throw new UnsupportedOperationException();
+		return new BiletNormalny(czas,id,cena);
 	}
 
 	public FabrykaBiletowNormalnych() {

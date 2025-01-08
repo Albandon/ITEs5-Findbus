@@ -15,8 +15,7 @@ public class PrezenterPrzystanek implements IPrezenterPrzystanek {
 	 * @param id
 	 */
 	public void removePrzystanek(int id) {
-		// TODO - implement PrezenterPrzystanek.removePrzystanek
-		throw new UnsupportedOperationException();
+		// TODO - baza danych
 	}
 
 	/**
@@ -24,8 +23,7 @@ public class PrezenterPrzystanek implements IPrezenterPrzystanek {
 	 * @param przystanek
 	 */
 	public void addPrzystanek(Przystanek przystanek) {
-		// TODO - implement PrezenterPrzystanek.addPrzystanek
-		throw new UnsupportedOperationException();
+		// TODO - baza danych
 	}
 
 	/**

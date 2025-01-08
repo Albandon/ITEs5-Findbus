@@ -1,26 +1,26 @@
+import java.util.Set;
+
 public class Ulubione {
 
-	private Przystanek[] przystanki;
+	private Set<Integer> przystanki;
 
 	/**
 	 * 
-	 * @param Przystanek
+	 * @param Id
 	 */
-	public void addPrzystanek(int Przystanek) {
-		// TODO - implement Ulubione.addPrzystanek
-		throw new UnsupportedOperationException();
+	public void addPrzystanek(int Id) {
+		przystanki.add(Id);
 	}
 
 	/**
 	 * 
-	 * @param Przystanek
+	 * @param Id
 	 */
-	public void removePrzystanek(int Przystanek) {
-		// TODO - implement Ulubione.removePrzystanek
-		throw new UnsupportedOperationException();
+	public void removePrzystanek(int Id) {
+		przystanki.remove(Id);
 	}
 
-	public Przystanek[] getPrzystanki() {
+	public Set<Integer> getPrzystanki() {
 		return this.przystanki;
 	}
 

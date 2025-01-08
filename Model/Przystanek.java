@@ -9,8 +9,7 @@ public class Przystanek {
 	}
 
 	public int getID() {
-		// TODO - implement Przystanek.getID
-		throw new UnsupportedOperationException();
+		return this.Id;
 	}
 
 	public double[] getLokalizacja() {
@@ -29,8 +28,8 @@ public class Przystanek {
 	 * @param lokalizacja
 	 */
 	public Przystanek(int id, String nazwa, double[] lokalizacja) {
-		// TODO - implement Przystanek.Przystanek
-		throw new UnsupportedOperationException();
+		this.Id = id;
+		this.nazwa = nazwa;
+		this.lokalizacja = lokalizacja;
 	}
-
 }

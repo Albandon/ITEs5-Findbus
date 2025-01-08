@@ -7,9 +7,8 @@ public class FabrykaBiletowUlgowych extends FabrykaBiletow {
 	 * @param cena
 	 * @param znizka
 	 */
-	public iBilet createBilet(int czas, int id, float cena, float znizka) {
-		// TODO - implement FabrykaBiletowUlgowych.createBilet
-		throw new UnsupportedOperationException();
+	public iBilet createBilet(int czas, int id, float cena, int znizka) {
+		return new BiletUlgowy(czas, id, cena, znizka);
 	}
 
 	public FabrykaBiletowUlgowych() {

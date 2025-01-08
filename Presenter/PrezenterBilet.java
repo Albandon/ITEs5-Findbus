@@ -1,14 +1,20 @@
+import java.util.Set;
+
 public class PrezenterBilet implements IPrezenterBilet {
 
-	private iBilet[] bilety;
+	private Set<iBilet> bilety;
 
 	/**
 	 * 
 	 * @param id
 	 */
 	public void removeBilet(int id) {
-		// TODO - implement PrezenterBilet.removeBilet
-		throw new UnsupportedOperationException();
+		for (iBilet bilet : bilety) {
+			if(bilet.getID()==id) {
+				bilety.remove(bilet);
+				break;
+			}
+		}
 	}
 
 	/**
@@ -16,8 +22,7 @@ public class PrezenterBilet implements IPrezenterBilet {
 	 * @param bilet
 	 */
 	public void addBilet(iBilet bilet) {
-		// TODO - implement PrezenterBilet.addBilet
-		throw new UnsupportedOperationException();
+		bilety.add(bilet);
 	}
 
 	/**
@@ -25,8 +30,13 @@ public class PrezenterBilet implements IPrezenterBilet {
 	 * @param id
 	 */
 	public iBilet getBilet(int id) {
-		// TODO - implement PrezenterBilet.getBilet
-		throw new UnsupportedOperationException();
+		for (iBilet bilet : bilety) {
+			if (bilet.getID()==id) {
+				return bilet;
+			}
+		}
+		return null;
+		//TODO - Nie Null
 	}
 
 	/**

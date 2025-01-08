@@ -20,8 +20,7 @@ public class PrezenterTras implements IPrezenterTras {
 	 * @param czas
 	 */
 	public void createTrasa(Przystanek[] przystanki, int[] czas) {
-		// TODO - implement PrezenterTras.createTrasa
-		throw new UnsupportedOperationException();
+		this.trasa = new Trasa(przystanki, czas);
 	}
 
 	public PrezenterTras() {

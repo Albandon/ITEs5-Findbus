@@ -3,7 +3,7 @@ public class BiletUlgowy implements iBilet {
 	private int czas;
 	private int id;
 	private float cena;
-	private float znizka;
+	private int znizka;
 
 	/**
 	 * 
@@ -12,9 +12,11 @@ public class BiletUlgowy implements iBilet {
 	 * @param cena
 	 * @param znizka
 	 */
-	public void Bilet(int czas, int id, float cena, int znizka) {
-		// TODO - implement BiletUlgowy.Bilet
-		throw new UnsupportedOperationException();
+	public BiletUlgowy(int czas, int id, float cena, int znizka) {
+		this.czas=czas;
+		this.id = id;
+		this.cena = cena;
+		this.znizka = znizka;
 	}
 
 	/**
@@ -30,16 +32,21 @@ public class BiletUlgowy implements iBilet {
 	}
 
 	public int getID() {
-		// TODO - implement BiletUlgowy.getID
-		throw new UnsupportedOperationException();
+		return this.id;
 	}
 
-	public float getZnizka() {
+	public int getZnizka() {
 		return this.znizka;
 	}
 
 	public float getCena() {
 		return this.cena;
 	}
-
+	public boolean equals(Object o) {
+		if ( !(o instanceof iBilet)) {
+			return false;
+		}
+		BiletUlgowy p = (BiletUlgowy)o;
+		return this.id == p.id;
+	}
 }

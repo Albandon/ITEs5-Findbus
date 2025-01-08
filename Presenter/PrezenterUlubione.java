@@ -7,8 +7,7 @@ public class PrezenterUlubione implements IPrezenterUlubione {
 	 * @param przystanek
 	 */
 	public void addToUlubione(Przystanek przystanek) {
-		// TODO - implement PrezenterUlubione.addToUlubione
-		throw new UnsupportedOperationException();
+		ulubione.addPrzystanek(przystanek.getID());
 	}
 
 	/**
@@ -16,8 +15,7 @@ public class PrezenterUlubione implements IPrezenterUlubione {
 	 * @param id
 	 */
 	public void removeFromUlubione(int id) {
-		// TODO - implement PrezenterUlubione.removeFromUlubione
-		throw new UnsupportedOperationException();
+		ulubione.removePrzystanek(id);
 	}
 
 	public Ulubione getUlubione() {
@@ -25,8 +23,7 @@ public class PrezenterUlubione implements IPrezenterUlubione {
 	}
 
 	public PrezenterUlubione() {
-		// TODO - implement PrezenterUlubione.PrezenterUlubione
-		throw new UnsupportedOperationException();
+		
 	}
 
 }

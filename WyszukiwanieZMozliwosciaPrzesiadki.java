@@ -6,9 +6,10 @@ public class WyszukiwanieZMozliwosciaPrzesiadki implements IStrategiaWyszukiwani
 	 * @param dokad
 	 * @param czas
 	 */
+	@Override
 	public Trasa Wyszukaj(int from, int dokad, int czas) {
-		// TODO - implement WyszukiwanieZMozliwosciaPrzesiadki.Wyszukaj
-		throw new UnsupportedOperationException();
+		System.out.println("Wyszukiwanie z możliwością przesiadki");
+		return new Trasa(null, null);
 	}
 
 }

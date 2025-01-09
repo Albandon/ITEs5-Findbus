@@ -25,9 +25,14 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 		throw new UnsupportedOperationException();
 	}
 
-	public static void main() {
-		// TODO - implement FunkcjeAplikacji.main
-		throw new UnsupportedOperationException();
+	public static void main(String[] args) {
+		FabrykaBiletow fabrykaBiletow;
+		fabrykaBiletow = new FabrykaBiletowNormalnych();
+		fabrykaBiletow.createBilet(0, 0, 0, 0);
+
+		fabrykaBiletow = new FabrykaBiletowUlgowych();
+		fabrykaBiletow.createBilet(0, 0, 0, 0);
+
 	}
 
 	public void printInformacjeTransakcji() {

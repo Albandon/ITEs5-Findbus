@@ -38,7 +38,6 @@ public class PrezenterBilet implements IPrezenterBilet {
 		return null;
 		//TODO - Nie Null
 	}
-
 	/**
 	 * 
 	 * @param czas
@@ -46,9 +45,10 @@ public class PrezenterBilet implements IPrezenterBilet {
 	 * @param cena
 	 * @param znizka
 	 */
-	public iBilet createBilet(int czas, int id, float cena, float znizka) {
-		// TODO - implement PrezenterBilet.createBilet
-		throw new UnsupportedOperationException();
+	public iBilet createBilet(int czas, int id, float cena, int znizka) {
+		FabrykaBiletow fabrykaBiletow = new FabrykaBiletowUlgowych();
+		if (znizka == 0) fabrykaBiletow = new FabrykaBiletowNormalnych();
+		return fabrykaBiletow.createBilet(czas, id, cena, znizka);
 	}
 
 	public PrezenterBilet() {

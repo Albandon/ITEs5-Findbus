@@ -25,6 +25,6 @@ public interface IPrezenterBilet {
 	 * @param cena
 	 * @param znizka
 	 */
-	iBilet createBilet(int czas, int id, float cena, float znizka);
+	iBilet createBilet(int czas, int id, float cena, int znizka);
 
 }

@@ -38,6 +38,9 @@ public class PrezenterBilet implements IPrezenterBilet {
 		return null;
 		//TODO - Nie Null
 	}
+	public iBilet[] getBilety() {
+        return bilety.toArray(new iBilet[0]);
+    }
 	/**
 	 * 
 	 * @param czas
@@ -53,7 +56,7 @@ public class PrezenterBilet implements IPrezenterBilet {
 
 	public PrezenterBilet() {
 		// TODO - implement PrezenterBilet.PrezenterBilet
-		throw new UnsupportedOperationException();
+		// throw new UnsupportedOperationException();
 	}
 
 }

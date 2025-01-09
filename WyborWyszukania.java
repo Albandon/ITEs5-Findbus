@@ -7,13 +7,11 @@ public class WyborWyszukania {
 	 * @param strategia
 	 */
 	public void setStrategia(IStrategiaWyszukiwania strategia) {
-		// TODO - implement WyborWyszukania.setStrategia
-		throw new UnsupportedOperationException();
+		this.strategiaWyszukania = strategia;
 	}
 
 	public WyborWyszukania() {
-		// TODO - implement WyborWyszukania.WyborWyszukania
-		throw new UnsupportedOperationException();
+		this.strategiaWyszukania = new WyszukiwanieBezPrzesiadki();
 	}
 
 	/**
@@ -23,8 +21,6 @@ public class WyborWyszukania {
 	 * @param czas
 	 */
 	public Trasa Wyszukaj(int from, int dokad, int czas) {
-		// TODO - implement WyborWyszukania.Wyszukaj
-		throw new UnsupportedOperationException();
+		return strategiaWyszukania.Wyszukaj(from, dokad, czas);
 	}
-
 }

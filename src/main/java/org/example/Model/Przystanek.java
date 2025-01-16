@@ -1,3 +1,4 @@
+package org.example.Model;
 public class Przystanek {
 
 	private int Id;

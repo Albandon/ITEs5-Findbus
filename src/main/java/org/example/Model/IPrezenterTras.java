@@ -1,3 +1,4 @@
+package org.example.Model;
 public interface IPrezenterTras {
 
 	Trasa getTrasa();

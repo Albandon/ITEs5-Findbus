@@ -1,3 +1,4 @@
+package org.example.Model;
 public class Trasa {
 
 	private int[] czas;

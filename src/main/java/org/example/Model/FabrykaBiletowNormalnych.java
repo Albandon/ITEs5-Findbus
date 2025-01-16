@@ -1,3 +1,5 @@
+package org.example.Model;
+
 public class FabrykaBiletowNormalnych extends FabrykaBiletow {
 
 	/**

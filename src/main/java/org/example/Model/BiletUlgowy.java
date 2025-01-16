@@ -1,3 +1,5 @@
+package org.example.Model;
+
 public class BiletUlgowy implements iBilet {
 
 	private int czas;

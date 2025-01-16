@@ -1,3 +1,8 @@
+package org.example.Presenter;
+
+import org.example.Model.IPrezenterPrzystanek;
+import org.example.Model.Przystanek;
+
 import java.util.HashSet;
 import java.util.Set;
 

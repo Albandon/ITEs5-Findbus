@@ -1,3 +1,11 @@
+package org.example;
+
+import org.example.Model.Przystanek;
+import org.example.Model.Trasa;
+import org.example.Model.iBilet;
+import org.example.Presenter.PrezenterBilet;
+import org.example.Presenter.PrezenterPrzystanek;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Arrays;

@@ -1,3 +1,9 @@
+package org.example.View;
+
+import org.example.IInterakcjaZUzytkownikiem;
+import org.example.IWidok;
+import org.example.Model.Przystanek;
+
 public class FunkcjeUzytkownika implements IWidok {
 
 	IInterakcjaZUzytkownikiem InterakcjaZUzytkownikiem;

@@ -1,3 +1,4 @@
+package org.example.Model;
 import java.util.Set;
 
 public class Ulubione {

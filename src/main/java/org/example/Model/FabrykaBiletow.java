@@ -1,3 +1,5 @@
+package org.example.Model;
+
 public abstract class FabrykaBiletow {
 
 	/**

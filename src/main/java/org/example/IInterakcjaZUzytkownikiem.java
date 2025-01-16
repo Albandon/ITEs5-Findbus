@@ -1,3 +1,8 @@
+package org.example;
+
+import org.example.Model.Przystanek;
+import org.example.Model.Trasa;
+
 public interface IInterakcjaZUzytkownikiem {
 
 	/**

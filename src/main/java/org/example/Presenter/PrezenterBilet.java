@@ -1,3 +1,7 @@
+package org.example.Presenter;
+
+import org.example.Model.*;
+
 import java.util.Set;
 import java.util.HashSet;
 

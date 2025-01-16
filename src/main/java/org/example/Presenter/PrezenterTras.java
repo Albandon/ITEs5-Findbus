@@ -1,3 +1,10 @@
+package org.example.Presenter;
+
+import org.example.Model.IPrezenterTras;
+import org.example.Model.Przystanek;
+import org.example.Model.Trasa;
+
+
 public class PrezenterTras implements IPrezenterTras {
 
 	private Trasa trasa;

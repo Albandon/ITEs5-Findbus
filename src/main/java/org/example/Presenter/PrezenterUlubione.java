@@ -1,3 +1,9 @@
+package org.example.Presenter;
+
+import org.example.Model.IPrezenterUlubione;
+import org.example.Model.Przystanek;
+import org.example.Model.Ulubione;
+
 public class PrezenterUlubione implements IPrezenterUlubione {
 
 	private Ulubione ulubione;

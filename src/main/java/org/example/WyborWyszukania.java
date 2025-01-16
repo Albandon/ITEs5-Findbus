@@ -1,3 +1,9 @@
+package org.example;
+
+import org.example.IStrategiaWyszukiwania;
+import org.example.Model.Trasa;
+import org.example.WyszukiwanieBezPrzesiadki;
+
 public class WyborWyszukania {
 
 	private IStrategiaWyszukiwania strategiaWyszukania;

@@ -1,3 +1,7 @@
+package org.example;
+
+import org.example.Model.Trasa;
+
 public class WyszukiwanieZMozliwosciaPrzesiadki implements IStrategiaWyszukiwania {
 
 	/**

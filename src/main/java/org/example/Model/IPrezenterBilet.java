@@ -5,7 +5,7 @@ public interface IPrezenterBilet {
 	 * 
 	 * @param id
 	 */
-	void removeBilet(int id);
+	boolean removeBilet(int id);
 
 	/**
 	 * 

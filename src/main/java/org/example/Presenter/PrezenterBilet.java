@@ -17,13 +17,14 @@ public class PrezenterBilet implements IPrezenterBilet {
 	 * 
 	 * @param id
 	 */
-	public void removeBilet(int id) {
+	public boolean removeBilet(int id) {
 		for (iBilet bilet : bilety) {
 			if(bilet.getID()==id) {
 				bilety.remove(bilet);
-				break;
+				return true;
 			}
 		}
+		return false;
 	}
 
 	/**

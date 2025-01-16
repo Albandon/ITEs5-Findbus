@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -33,8 +34,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.FunkcjeAplikacji.executor": "Run",
+    "JUnit.UlubioneTest.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/walde/IdeaProjects/ITEs5-Findbus",
     "node.js.detected.package.eslint": "true",
@@ -42,13 +46,19 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "proofread",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.View" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.Model" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -68,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1736949355603</updated>
       <workItem from="1736949365067" duration="402000" />
-      <workItem from="1737029911230" duration="1705000" />
+      <workItem from="1737029911230" duration="3057000" />
     </task>
     <servers />
   </component>
@@ -85,5 +95,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/Model/UlubioneTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,7 +1,14 @@
+import java.util.HashSet;
+import java.util.Set;
+
 public class PrezenterPrzystanek implements IPrezenterPrzystanek {
 
+	private Set<Przystanek> przystanki;
 	private Przystanek przystanek;
 
+	public PrezenterPrzystanek() {
+		this.przystanki = new HashSet<>();  // Initialize the Set here
+	}
 	/**
 	 * 
 	 * @param id
@@ -23,11 +30,12 @@ public class PrezenterPrzystanek implements IPrezenterPrzystanek {
 	 * @param przystanek
 	 */
 	public void addPrzystanek(Przystanek przystanek) {
+
 		// TODO - baza danych
 	}
 
 	/**
-	 * 
+	 *
 	 * @param przystanek
 	 */
 	public Przystanek findPrzystanek(String przystanek) {
@@ -35,9 +43,6 @@ public class PrezenterPrzystanek implements IPrezenterPrzystanek {
 		throw new UnsupportedOperationException();
 	}
 
-	public PrezenterPrzystanek() {
-		// TODO - implement PrezenterPrzystanek.PrezenterPrzystanek
-		throw new UnsupportedOperationException();
-	}
+
 
 }

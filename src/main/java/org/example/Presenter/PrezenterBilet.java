@@ -1,8 +1,13 @@
 import java.util.Set;
+import java.util.HashSet;
 
 public class PrezenterBilet implements IPrezenterBilet {
 
 	private Set<iBilet> bilety;
+
+	public PrezenterBilet() {
+		this.bilety = new HashSet<>();  // Initialize the Set here
+	}
 
 	/**
 	 * 
@@ -38,6 +43,9 @@ public class PrezenterBilet implements IPrezenterBilet {
 		return null;
 		//TODO - Nie Null
 	}
+	public iBilet[] getBilety() {
+        return bilety.toArray(new iBilet[0]);
+    }
 	/**
 	 * 
 	 * @param czas
@@ -49,11 +57,6 @@ public class PrezenterBilet implements IPrezenterBilet {
 		FabrykaBiletow fabrykaBiletow = new FabrykaBiletowUlgowych();
 		if (znizka == 0) fabrykaBiletow = new FabrykaBiletowNormalnych();
 		return fabrykaBiletow.createBilet(czas, id, cena, znizka);
-	}
-
-	public PrezenterBilet() {
-		// TODO - implement PrezenterBilet.PrezenterBilet
-		throw new UnsupportedOperationException();
 	}
 
 }

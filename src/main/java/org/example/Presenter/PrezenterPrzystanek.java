@@ -19,7 +19,23 @@ public class PrezenterPrzystanek implements IPrezenterPrzystanek {
 	 * @param id
 	 */
 	public Przystanek getPrzystanek(int id) {
-		return this.przystanek;
+		if (przystanki == null || przystanki.isEmpty()) {
+			System.out.println("Zbiór przystanków jest pusty.");
+			return null;
+		}
+
+		for (Przystanek przystanek : przystanki) {
+			if (przystanek.getID() == id) {
+				return przystanek;
+			}
+		}
+
+		System.out.println("Nie znaleziono przystanku o ID " + id + ".");
+		return null;
+	}
+
+	public Przystanek createPrzystanek(int id, String nazwa, double[] lokalizacja) {
+		return new Przystanek(id, nazwa, lokalizacja);
 	}
 
 	/**
@@ -27,7 +43,18 @@ public class PrezenterPrzystanek implements IPrezenterPrzystanek {
 	 * @param id
 	 */
 	public void removePrzystanek(int id) {
-		// TODO - baza danych
+		if (przystanki == null || przystanki.isEmpty()) {
+			System.out.println("Zbiór przystanków jest pusty.");
+			return;
+		}
+
+		boolean removed = przystanki.removeIf(przystanek -> przystanek.getID() == id);
+
+		if (removed) {
+			System.out.println("Przystanek o ID " + id + " został usunięty.");
+		} else {
+			System.out.println("Nie znaleziono przystanku o ID " + id + ".");
+		}
 	}
 
 	/**
@@ -35,17 +62,35 @@ public class PrezenterPrzystanek implements IPrezenterPrzystanek {
 	 * @param przystanek
 	 */
 	public void addPrzystanek(Przystanek przystanek) {
+		if (przystanek == null) {
+			throw new IllegalArgumentException("Przystanek nie może być null");
+		}
 
-		// TODO - baza danych
+		// Inicjalizacja zbioru, jeśli jest pusty
+		if (przystanki == null) {
+			przystanki = new HashSet<>();
+		}
+
+		// Dodanie przystanku do zbioru
+		if (!przystanki.add(przystanek)) {
+			System.out.println("Przystanek już istnieje w zbiorze: " + przystanek);
+		}
 	}
 
-	/**
-	 *
-	 * @param przystanek
-	 */
-	public Przystanek findPrzystanek(String przystanek) {
-		// TODO - implement PrezenterPrzystanek.findPrzystanek
-		throw new UnsupportedOperationException();
+	public Przystanek findPrzystanek(String name) {
+		if (przystanki == null || przystanki.isEmpty()) {
+			System.out.println("Zbiór przystanków jest pusty.");
+			return null;
+		}
+
+		for (Przystanek przystanek : przystanki) {
+			if (przystanek.getNazwa().equalsIgnoreCase(name)) {
+				return przystanek;
+			}
+		}
+
+		System.out.println("Nie znaleziono przystanku o nazwie \"" + name + "\".");
+		return null;
 	}
 
 

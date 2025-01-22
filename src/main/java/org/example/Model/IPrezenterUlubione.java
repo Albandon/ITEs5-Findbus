@@ -3,9 +3,9 @@ public interface IPrezenterUlubione {
 
 	/**
 	 * 
-	 * @param przystanek
+	 * @param id
 	 */
-	void addToUlubione(Przystanek przystanek);
+	void addToUlubione(int id);
 
 	/**
 	 * 

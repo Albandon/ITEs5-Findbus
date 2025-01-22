@@ -10,10 +10,10 @@ public class PrezenterUlubione implements IPrezenterUlubione {
 
 	/**
 	 * 
-	 * @param przystanek
+	 * @param id
 	 */
-	public void addToUlubione(Przystanek przystanek) {
-		ulubione.addPrzystanek(przystanek.getID());
+	public void addToUlubione(int id) {
+		ulubione.addPrzystanek(id);
 	}
 
 	/**

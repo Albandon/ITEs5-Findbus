@@ -1,20 +1,23 @@
 package org.example;
 
-import org.example.Model.Przystanek;
-import org.example.Model.Trasa;
-import org.example.Model.iBilet;
+import org.example.Model.*;
 import org.example.Presenter.PrezenterBilet;
 import org.example.Presenter.PrezenterPrzystanek;
+import org.example.Presenter.PrezenterUlubione;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.concurrent.atomic.AtomicInteger;
+
 // TODO - Walidacje Danych
 public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 
 	public static PrezenterBilet prezenterBiletow = new PrezenterBilet();
 	public static PrezenterPrzystanek prezenterPrzystankow = new PrezenterPrzystanek();
+	public static PrezenterUlubione prezenterUlubione = new PrezenterUlubione();
 
+	public static Ulubione ulubione = new Ulubione();
 	@Override
 	public Trasa searchTrasa() {
 		// TODO - implement FunkcjeAplikacji.searchTrasa
@@ -44,11 +47,66 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 
 	public static void startScreen(){
 		Scanner scanner = new Scanner(System.in);
-		
-		System.out.println("Wprowadz miejsce startowe:");
-		String start_place = scanner.nextLine();
-		System.out.println("Wprowadz miejsce koncowe:");
-		String end_place = scanner.nextLine();
+		String end_place = "";
+		String start_place = "";
+
+		System.out.println("Czy chcesz dodać przystanek do ulubionych:");
+		System.out.println("1. TAK");
+		System.out.println("2. NIE");
+		String choice = scanner.nextLine();
+		switch (choice) {
+			case "1":
+				System.out.println("Wpisz id przystanka, który chcesz dodać do ulubionych:");
+				String stop = scanner.nextLine();
+				prezenterUlubione.addToUlubione(Integer.parseInt(stop));
+				break;
+			default:
+				break;
+		}
+
+
+		System.out.println("Czy chcesz uzupełnić miejsce startowe z ulubionych:");
+		System.out.println("1. TAK");
+		System.out.println("2. NIE");
+		choice = scanner.nextLine();
+
+		switch (choice) {
+			case "1":
+				AtomicInteger index = new AtomicInteger();
+				System.out.println("Wybierz id przystanku z poniższych:");
+				prezenterUlubione.getUlubione().getPrzystanki().iterator().forEachRemaining((id) -> System.out.println((index.getAndIncrement() + 1) + ". " + id));
+				choice = scanner.nextLine();
+//				start_place = prezenterUlubione.getUlubione().getPrzystanki().iterator().equals();
+				break;
+			case "2":
+				System.out.println("Wprowadz miejsce startowe:");
+				start_place = scanner.nextLine();
+				break;
+			default:
+				break;
+		}
+		System.out.println("Czy chcesz uzupełnić miejsce końcowe z ulubionych:");
+		System.out.println("1. TAK");
+		System.out.println("2. NIE");
+		choice = scanner.nextLine();
+
+		switch (choice) {
+			case "1":
+				AtomicInteger index = new AtomicInteger();
+				System.out.println("Wybierz id przystanku z poniższych:");
+				prezenterUlubione.getUlubione().getPrzystanki().iterator().forEachRemaining((id) -> System.out.println((index.getAndIncrement() + 1) + ". " + id));
+				choice = scanner.nextLine();
+//				end_place = prezenterUlubione.getUlubione().getPrzystanki().iterator().equals();
+				break;
+			case "2":
+				System.out.println("Wprowadz miejsce koncowe:");
+				end_place = scanner.nextLine();
+				break;
+			default:
+				break;
+		}
+
+
 		System.out.println("Wprowadz godzine o ktorej chcesz wyruszyc:");
 		String time = scanner.nextLine();
 		//scanner.close();
@@ -87,7 +145,7 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 			case "4":
 				startScreen();
 				break;
-		
+
 			default:
 				break;
 		}
@@ -140,7 +198,7 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 				break;
 		}
 		//scanner.close();
-	
+
 	}
 	public static void kupBilet(ArrayList<String> info){
 		Scanner scanner = new Scanner(System.in);
@@ -149,7 +207,7 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 		System.out.println("miejsce koncowe: " + info.get(2));
 		System.out.println("przystanki: " + info.get(6));
 		System.out.println("Sposob Transakcji: blik");
-		
+
 		System.out.println("1. Kup bilet normalny");
 		System.out.println("2. Kup bilet ulgowy");
 		System.out.println("3. wroc");
@@ -222,7 +280,7 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 		id++;
 		prezenterPrzystankow.addPrzystanek(new Przystanek(id, "Albanowska",new double[]{12.5, 13.3}));
 		startScreen();
-		
+
 	}
 
 
@@ -232,7 +290,7 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param czas
 	 * @param metodaTransakcji
 	 * @param cena
@@ -244,7 +302,7 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param przystanek
 	 */
 	@Override
@@ -252,7 +310,7 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param id
 	 */
 	@Override

@@ -12,7 +12,7 @@ class iBiletTest {
         var uBilet = new BiletUlgowy(900,2,3.20f,20);
         assertAll(
                 ()->assertEquals(0,Bilet.getZnizka()),
-                ()->assertEquals(20,uBilet,getZnizka())
+                ()->assertEquals(20,uBilet.getZnizka())
         );
         assertEquals(0,Bilet.getZnizka());
 

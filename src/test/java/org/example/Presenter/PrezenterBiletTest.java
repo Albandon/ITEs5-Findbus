@@ -21,7 +21,6 @@ class PrezenterBiletTest {
 
     @Test
     void createBilet() {
-
         var norm = Prezenter.createBilet(900,1,3.20f,0);
         var ulg = Prezenter.createBilet(900,1,3.20f,20);
         assertAll(
@@ -29,5 +28,20 @@ class PrezenterBiletTest {
             ()->assertInstanceOf(BiletNormalny.class,norm)
         );
         assertNotNull(Prezenter.createBilet(900,1,3.20f,20));
+    }
+
+    @Test
+    void addBilet() {
+        Prezenter.addBilet(Prezenter.createBilet(900,1,3,2));
+        assertEquals(Prezenter.createBilet(900,1,3,2), Prezenter.getBilet(1));
+    }
+
+    @Test
+    void getBilet() {
+        Prezenter.addBilet(Prezenter.createBilet(900,1,3,2));
+        assertAll(
+            ()->assertEquals(Prezenter.createBilet(900,1,3,2),Prezenter.getBilet(1)),
+            ()->assertNull(Prezenter.getBilet(2))
+        );
     }
 }

@@ -42,19 +42,22 @@ public class PrezenterPrzystanek implements IPrezenterPrzystanek {
 	 * 
 	 * @param id
 	 */
-	public void removePrzystanek(int id) {
+	public boolean removePrzystanek(int id) {
 		if (przystanki == null || przystanki.isEmpty()) {
 			System.out.println("Zbiór przystanków jest pusty.");
-			return;
+			return false;
 		}
 
 		boolean removed = przystanki.removeIf(przystanek -> przystanek.getID() == id);
 
 		if (removed) {
 			System.out.println("Przystanek o ID " + id + " został usunięty.");
+			return true;
 		} else {
 			System.out.println("Nie znaleziono przystanku o ID " + id + ".");
+			return false;
 		}
+
 	}
 
 	/**

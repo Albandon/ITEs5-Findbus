@@ -1,5 +1,7 @@
 package org.example.Presenter;
 
+import org.example.Model.BiletNormalny;
+import org.example.Model.BiletUlgowy;
 import org.example.Model.Przystanek;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -20,13 +22,51 @@ class PrezenterPrzystankowTest {
         var przystanek =  Prezenter.createPrzystanek(id, nazwa, lokalizacja);
         Prezenter.addPrzystanek(przystanek);
         Przystanek foundPrzystanek = Prezenter.findPrzystanek(nazwa);
-        assertAll (
-                assertNotNull(foundPrzystanek, "Przystanek został dodany.");
-                assertEquals(przystanek, foundPrzystanek, "Przystanek został znaleziony.");
+        assertAll(
+                ()->assertNotNull(foundPrzystanek, "Przystanek został dodany.")
         );
-        assertFalse(Prezenter.removeBilet(1));
     }
 
+    @Test
+    void getPrzystanek() {
+        int id = 1;
+        String nazwa = "Piłsudskiego";
+        double[] lokalizacja = {52, 21};
+        var przystanek =  Prezenter.createPrzystanek(id, nazwa, lokalizacja);
+        Prezenter.addPrzystanek(przystanek);
+
+        Przystanek foundPrzystanek = Prezenter.getPrzystanek(przystanek.getID());
+        assertAll(
+                ()->assertEquals(przystanek, foundPrzystanek, "Przystanek został znaleziony.")
+        );
+    }
+    @Test
+    void findPrzystanek() {
+        int id = 1;
+        String nazwa = "Piłsudskiego";
+        double[] lokalizacja = {52, 21};
+        var przystanek =  Prezenter.createPrzystanek(id, nazwa, lokalizacja);
+        Prezenter.addPrzystanek(przystanek);
+
+        Przystanek foundPrzystanek = Prezenter.findPrzystanek(przystanek.getNazwa());
+        assertAll(
+                ()->assertEquals(przystanek, foundPrzystanek, "Przystanek został znaleziony.")
+        );
+    }
+
+    @Test
+    void removePrzystanek() {
+        String nazwa = "Piłsudskiego";
+        double[] lokalizacja = {52, 21};
+        var przystanek1 =  Prezenter.createPrzystanek(1, nazwa, lokalizacja);
+        Prezenter.addPrzystanek(przystanek1);
+
+        assertAll(
+                () -> assertFalse(Prezenter.removePrzystanek(2), "Nie powinno się usunąć nieistniejącego przystanku."),
+                () -> assertTrue(Prezenter.removePrzystanek(przystanek1.getID()), "Przystanek A powinien być usunięty."),
+                () -> assertNull(Prezenter.getPrzystanek(przystanek1.getID()), "Przystanek A nie powinien znajdować się w zbiorze.")
+        );
+    }
 
     @Test
     void testEquals() {

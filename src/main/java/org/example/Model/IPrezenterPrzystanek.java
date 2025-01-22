@@ -11,7 +11,7 @@ public interface IPrezenterPrzystanek {
 	 * 
 	 * @param id
 	 */
-	void removePrzystanek(int id);
+	boolean removePrzystanek(int id);
 
 	/**
 	 * 

@@ -1,12 +1,15 @@
 package org.example;
 
 import org.example.IStrategiaWyszukiwania;
+import org.example.Model.IPrezenterBilet;
+import org.example.Model.IPrezenterTras;
 import org.example.Model.Trasa;
 import org.example.WyszukiwanieBezPrzesiadki;
 
 public class WyborWyszukania {
 
-	private IStrategiaWyszukiwania strategiaWyszukania;
+	protected IStrategiaWyszukiwania strategiaWyszukania;
+
 
 	/**
 	 * 
@@ -18,6 +21,7 @@ public class WyborWyszukania {
 
 	public WyborWyszukania() {
 		this.strategiaWyszukania = new WyszukiwanieBezPrzesiadki();
+
 	}
 
 	/**
@@ -26,7 +30,7 @@ public class WyborWyszukania {
 	 * @param dokad
 	 * @param czas
 	 */
-	public Trasa Wyszukaj(int from, int dokad, int czas) {
-		return strategiaWyszukania.Wyszukaj(from, dokad, czas);
+	public Trasa Wyszukaj(int from, int dokad, int czas, IPrezenterTras prezenter) {
+		return strategiaWyszukania.Wyszukaj(from, dokad, czas, prezenter);
 	}
 }

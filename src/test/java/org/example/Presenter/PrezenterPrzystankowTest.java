@@ -67,8 +67,4 @@ class PrezenterPrzystankowTest {
                 () -> assertNull(Prezenter.getPrzystanek(przystanek1.getID()), "Przystanek A nie powinien znajdować się w zbiorze.")
         );
     }
-
-    @Test
-    void testEquals() {
-    }
 }

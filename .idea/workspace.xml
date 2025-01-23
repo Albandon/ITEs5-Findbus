@@ -46,7 +46,7 @@
       <recent name="org.example.Model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrezenterPrzystankowTest.removePrzystanek">
+  <component name="RunManager" selected="JUnit.PrezenterPrzystankowTest.addPrzystanek">
     <configuration name="PrezenterPrzystankowTest.addPrzystanek" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITEs5-Findbus" />
       <option name="PACKAGE_NAME" value="org.example.Presenter" />
@@ -99,11 +99,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PrezenterPrzystankowTest.removePrzystanek" />
-        <item itemvalue="JUnit.PrezenterPrzystankowTest.findPrzystanek" />
-        <item itemvalue="JUnit.PrezenterPrzystankowTest.getPrzystanek" />
-        <item itemvalue="JUnit.PrzystanekTest.getZnizka" />
         <item itemvalue="JUnit.PrezenterPrzystankowTest.addPrzystanek" />
+        <item itemvalue="JUnit.PrezenterPrzystankowTest.getPrzystanek" />
+        <item itemvalue="JUnit.PrezenterPrzystankowTest.findPrzystanek" />
+        <item itemvalue="JUnit.PrezenterPrzystankowTest.removePrzystanek" />
+        <item itemvalue="JUnit.PrzystanekTest.getZnizka" />
       </list>
     </recent_temporary>
   </component>

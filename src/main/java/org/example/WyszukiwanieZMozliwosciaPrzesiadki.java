@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.Model.IPrezenterTras;
 import org.example.Model.Trasa;
 
 public class WyszukiwanieZMozliwosciaPrzesiadki implements IStrategiaWyszukiwania {
@@ -11,9 +12,10 @@ public class WyszukiwanieZMozliwosciaPrzesiadki implements IStrategiaWyszukiwani
 	 * @param czas
 	 */
 	@Override
-	public Trasa Wyszukaj(int from, int dokad, int czas) {
+	public Trasa Wyszukaj(int from, int dokad, int czas, IPrezenterTras prezenter) {
 		System.out.println("Wyszukiwanie z możliwością przesiadki");
-		return new Trasa(null, null);
+		prezenter.createTrasa(null,null);
+		return prezenter.getTrasa();
 	}
 
 }

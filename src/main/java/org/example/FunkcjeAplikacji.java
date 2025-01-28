@@ -10,12 +10,15 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import static org.example.Model.iBilet.count;
+
 // TODO - Walidacje Danych
 public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 
 	public static PrezenterBilet prezenterBiletow = new PrezenterBilet();
 	public static PrezenterPrzystanek prezenterPrzystankow = new PrezenterPrzystanek();
 	public static PrezenterUlubione prezenterUlubione = new PrezenterUlubione();
+	public static boolean TransactionSuccesfull = false;
 
 	public static Ulubione ulubione = new Ulubione();
 	@Override
@@ -25,9 +28,14 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 	}
 
 	@Override
-	public String getInformacjeBiletu() {
-		// TODO - implement FunkcjeAplikacji.getInformacjeBiletu
-		throw new UnsupportedOperationException();
+	public String getInformacjeBiletu(int id) {
+		var bilet = prezenterBiletow.getBilet(id);
+
+		if (bilet == null) {
+			return "";
+		}
+
+		return bilet.toString();
 	}
 
 	public void printTrasa() {
@@ -237,6 +245,7 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 		String kod_blik = scanner.nextLine();
 		prezenterBiletow.addBilet(prezenterBiletow.createBilet(15*60, 1, 4.80f, 0));
 		System.out.println("udało się zakupić bilet");
+		TransactionSuccesfull = true;
 		System.out.println("w zakładce bilety możesz go obejrzeć");
 		System.out.println("1. bilety");
 		System.out.println("2. wroc");
@@ -296,9 +305,8 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 	 * @param cena
 	 */
 	@Override
-	public void purchaseBilet(int czas, String metodaTransakcji, float cena) {
-		// TODO - implement FunkcjeAplikacji.purchaseBilet
-		throw new UnsupportedOperationException();
+	public void purchaseBilet(int czas, String metodaTransakcji, float cena, int discount) {
+		prezenterBiletow.addBilet(prezenterBiletow.createBilet(czas,count.incrementAndGet(),cena,0));
 	}
 
 	/**
@@ -307,6 +315,7 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 	 */
 	@Override
 	public void addToUlubione(Przystanek przystanek) {
+		prezenterUlubione.addToUlubione(przystanek.getID());
 	}
 
 	/**
@@ -315,11 +324,10 @@ public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
 	 */
 	@Override
 	public void removeFromUlubione(int id) {
-		// TODO - implement FunkcjeAplikacji.removeFromUlubione
-		throw new UnsupportedOperationException();
+		prezenterUlubione.removeFromUlubione(id);
 	}
 
-	public int getInformacjePrzystanku() {
+	public int getInformacjePrzystanku(int id) {
 		// TODO - implement FunkcjeAplikacji.getInformacjePrzystanku
 		throw new UnsupportedOperationException();
 	}

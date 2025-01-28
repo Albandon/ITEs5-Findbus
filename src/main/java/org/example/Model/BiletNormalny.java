@@ -49,5 +49,12 @@ public class BiletNormalny implements iBilet {
 		BiletNormalny p = (BiletNormalny)o;
 		return this.id == p.id;
 	}
-
+	@Override
+	public int hashCode(){
+		return this.id;
+	}
+	@Override
+	public String toString() {
+		return String.format("\tWażny przez: %ds \n\t Cena biletu: %f zł\n", this.czas, this.cena);
+	}
 }

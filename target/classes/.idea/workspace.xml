@@ -4,9 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e052aa44-dd4a-4573-852f-af3c14dc3f41" name="Changes" comment="">
+    <list default="true" id="081a15db-c4f0-4f1f-b4a5-4e1108a8bc02" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Model/UlubioneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Model/UlubioneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Model/iBiletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Model/iBiletTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Presenter/PrezenterBiletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Presenter/PrezenterBiletTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Presenter/PrezenterPrzystankowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Presenter/PrezenterPrzystankowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/dictionaries/walde.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/ITEs5-Findbus.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/src/main/java/org/example/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/src/main/java/org/example/ITEs5-Findbus.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,60 +32,116 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2rfTuf5ll6F1lWMpqcbGzGnSez8" />
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Albandon"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Albandon/ITEs5-Findbus.git",
+    "accountId": "f97d8193-68a4-48b8-88b0-1e1b06b96709"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2rOT0plJH5TTwwLcBvUxJGc9NKp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.FunkcjeAplikacji.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PrezenterBiletTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.UlubioneTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.iBiletTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/walde/IdeaProjects/ITEs5-Findbus&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.All in ITEs5-Findbus.executor": "Run",
+    "JUnit.PrezenterBiletTest.createBiletUlgowyTest.executor": "Run",
+    "JUnit.iBiletTest.equals.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.example.View" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="org.example.Model" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.example.Presenter" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.Model" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="iBiletTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PrezenterBiletTest.createBiletUlgowyTest">
+    <configuration name="All in ITEs5-Findbus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITEs5-Findbus" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrezenterBiletTest.createBiletUlgowyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITEs5-Findbus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Presenter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.Presenter" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Presenter.PrezenterBiletTest" />
+      <option name="METHOD_NAME" value="createBiletUlgowyTest(int,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrezenterPrzystankowTest.addPrzystanek" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITEs5-Findbus" />
+      <option name="PACKAGE_NAME" value="org.example.Presenter" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Presenter.PrezenterPrzystankowTest" />
+      <option name="METHOD_NAME" value="addPrzystanek" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrezenterPrzystankowTest.getPrzystanek" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITEs5-Findbus" />
+      <option name="PACKAGE_NAME" value="org.example.Presenter" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Presenter.PrezenterPrzystankowTest" />
+      <option name="METHOD_NAME" value="getPrzystanek" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iBiletTest.equals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITEs5-Findbus" />
       <extension name="coverage">
         <pattern>
@@ -79,14 +151,19 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.Model" />
       <option name="MAIN_CLASS_NAME" value="org.example.Model.iBiletTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="equals" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.iBiletTest" />
+        <item itemvalue="JUnit.PrezenterBiletTest.createBiletUlgowyTest" />
+        <item itemvalue="JUnit.All in ITEs5-Findbus" />
+        <item itemvalue="JUnit.iBiletTest.equals" />
+        <item itemvalue="JUnit.PrezenterPrzystankowTest.addPrzystanek" />
+        <item itemvalue="JUnit.PrezenterPrzystankowTest.getPrzystanek" />
       </list>
     </recent_temporary>
   </component>
@@ -101,29 +178,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e052aa44-dd4a-4573-852f-af3c14dc3f41" name="Changes" comment="" />
-      <created>1736949355603</created>
+      <changelist id="081a15db-c4f0-4f1f-b4a5-4e1108a8bc02" name="Changes" comment="" />
+      <created>1738061272083</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1736949355603</updated>
-      <workItem from="1736949365067" duration="402000" />
-      <workItem from="1737029911230" duration="5886000" />
-      <workItem from="1737525199233" duration="29000" />
+      <updated>1738061272083</updated>
+      <workItem from="1738061297286" duration="914000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

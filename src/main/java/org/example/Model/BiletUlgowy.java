@@ -44,11 +44,20 @@ public class BiletUlgowy implements iBilet {
 	public float getCena() {
 		return this.cena;
 	}
+	@Override
 	public boolean equals(Object o) {
 		if ( !(o instanceof iBilet)) {
 			return false;
 		}
 		BiletUlgowy p = (BiletUlgowy)o;
 		return this.id == p.id;
+	}
+	@Override
+	public int hashCode(){
+		return this.id;
+	}
+	@Override
+	public String toString() {
+		return String.format("\tWażny przez: %ds \n\t Cena biletu: %f zł\n", this.czas, this.cena);
 	}
 }

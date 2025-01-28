@@ -16,4 +16,6 @@ public interface iBilet {
 	int getZnizka();
 	@Override
 	boolean equals(Object obj);
+	@Override
+	int hashCode();
 }

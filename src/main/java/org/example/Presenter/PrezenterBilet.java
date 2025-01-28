@@ -58,7 +58,9 @@ public class PrezenterBilet implements IPrezenterBilet {
 	 * @param cena
 	 * @param znizka
 	 */
-	public iBilet createBilet(int czas, int id, float cena, int znizka) {
+	public iBilet createBilet(int czas, int id, float cena, int znizka) throws IllegalArgumentException{
+		if (znizka >= 100) throw new IllegalArgumentException("Zniżka nie może przekraczać 100%");
+		if (znizka <0) throw new IllegalArgumentException("Zniżka nie może być ujemna");
 		FabrykaBiletow fabrykaBiletow = new FabrykaBiletowUlgowych();
 		if (znizka == 0) fabrykaBiletow = new FabrykaBiletowNormalnych();
 		return fabrykaBiletow.createBilet(czas, id, cena, znizka);

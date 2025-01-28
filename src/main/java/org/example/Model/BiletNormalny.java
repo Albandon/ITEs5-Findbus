@@ -49,5 +49,9 @@ public class BiletNormalny implements iBilet {
 		BiletNormalny p = (BiletNormalny)o;
 		return this.id == p.id;
 	}
+	@Override
+	public int hashCode(){
+		return this.id;
+	}
 
 }

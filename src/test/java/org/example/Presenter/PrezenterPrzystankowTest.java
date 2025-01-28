@@ -4,6 +4,7 @@ import org.example.Model.BiletNormalny;
 import org.example.Model.BiletUlgowy;
 import org.example.Model.Przystanek;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.Set;
@@ -15,7 +16,8 @@ class PrezenterPrzystankowTest {
     PrezenterPrzystanek Prezenter = new PrezenterPrzystanek();
 
     @Test
-    void addPrzystanek() {
+    @Tag("Add")
+    void addPrzystanekTest() {
         int id = 1;
         String nazwa = "Piłsudskiego";
         double[] lokalizacja = {52, 21};
@@ -28,7 +30,8 @@ class PrezenterPrzystankowTest {
     }
 
     @Test
-    void getPrzystanek() {
+    @Tag("Get")
+    void getPrzystanekTest() {
         int id = 1;
         String nazwa = "Piłsudskiego";
         double[] lokalizacja = {52, 21};
@@ -41,7 +44,8 @@ class PrezenterPrzystankowTest {
         );
     }
     @Test
-    void findPrzystanek() {
+    @Tag("Get")
+    void findPrzystanekTest() {
         int id = 1;
         String nazwa = "Piłsudskiego";
         double[] lokalizacja = {52, 21};
@@ -55,7 +59,8 @@ class PrezenterPrzystankowTest {
     }
 
     @Test
-    void removePrzystanek() {
+    @Tag("Remove")
+    void removePrzystanekTest() {
         String nazwa = "Piłsudskiego";
         double[] lokalizacja = {52, 21};
         var przystanek1 =  Prezenter.createPrzystanek(1, nazwa, lokalizacja);

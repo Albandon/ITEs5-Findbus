@@ -19,9 +19,9 @@ public interface IInterakcjaZUzytkownikiem {
 	 */
 	void removeFromUlubione(int id);
 
-	String getInformacjeBiletu();
+	String getInformacjeBiletu(int id);
 
-	int getInformacjePrzystanku();
+	int getInformacjePrzystanku(int id);
 
 	/**
 	 * 
@@ -29,6 +29,6 @@ public interface IInterakcjaZUzytkownikiem {
 	 * @param metodaTransakcji
 	 * @param cena
 	 */
-	void purchaseBilet(int czas, String metodaTransakcji, float cena);
+	void purchaseBilet(int czas, String metodaTransakcji, float cena, int discount);
 
 }

@@ -13,6 +13,7 @@ public class PrezenterUlubione implements IPrezenterUlubione {
 	 * @param id
 	 */
 	public void addToUlubione(int id) {
+
 		ulubione.addPrzystanek(id);
 	}
 
@@ -21,11 +22,19 @@ public class PrezenterUlubione implements IPrezenterUlubione {
 	 * @param id
 	 */
 	public void removeFromUlubione(int id) {
-		ulubione.removePrzystanek(id);
+		var res = ulubione.removePrzystanek(id);
+
+		if (!res) throw new IllegalArgumentException("Operacja się nie powiodła");
+
+
 	}
 
 	public Ulubione getUlubione() {
-		return this.ulubione;
+		var res = ulubione;
+		if (ulubione == null) {
+			throw new NullPointerException("Lista ulubione jest pusta");
+		}
+		return res;
 	}
 
 	public PrezenterUlubione() {

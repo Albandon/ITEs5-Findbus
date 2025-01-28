@@ -4,29 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="081a15db-c4f0-4f1f-b4a5-4e1108a8bc02" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="081a15db-c4f0-4f1f-b4a5-4e1108a8bc02" name="Changes" comment="Junit testy 2/4">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/FunkcjeAplikacjiTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FunkcjeAplikacji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FunkcjeAplikacji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/IInterakcjaZUzytkownikiem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/IInterakcjaZUzytkownikiem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/BiletNormalny.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/BiletNormalny.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/BiletUlgowy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/BiletUlgowy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Model/iBilet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Model/iBilet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Presenter/PrezenterBilet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Presenter/PrezenterBilet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Model/UlubioneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Model/UlubioneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Model/iBiletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Model/iBiletTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Presenter/PrezenterBiletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Presenter/PrezenterBiletTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Presenter/PrezenterPrzystankowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Presenter/PrezenterPrzystankowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/dictionaries/walde.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/ITEs5-Findbus.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/src/main/java/org/example/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/src/main/java/org/example/ITEs5-Findbus.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Presenter/PrezenterUlubione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Presenter/PrezenterUlubione.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +22,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -68,6 +59,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.All in ITEs5-Findbus.executor": "Run",
+    "JUnit.FunkcjeAplikacjiTest.executor": "Run",
     "JUnit.PrezenterBiletTest.createBiletUlgowyTest.executor": "Run",
     "JUnit.PrezenterBiletTest.executor": "Run",
     "JUnit.PrezenterBiletTest.removeBiletTest.executor": "Debug",
@@ -77,7 +69,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Test",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -102,11 +94,26 @@
       <recent name="org.example.Model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrezenterBiletTest">
+  <component name="RunManager" selected="JUnit.FunkcjeAplikacjiTest">
     <configuration name="All in ITEs5-Findbus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ITEs5-Findbus" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunkcjeAplikacjiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ITEs5-Findbus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.FunkcjeAplikacjiTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -158,29 +165,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="iBiletTest.equals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ITEs5-Findbus" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.Model" />
-      <option name="MAIN_CLASS_NAME" value="org.example.Model.iBiletTest" />
-      <option name="METHOD_NAME" value="equals" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FunkcjeAplikacjiTest" />
         <item itemvalue="JUnit.PrezenterBiletTest" />
         <item itemvalue="JUnit.PrezenterBiletTest.removeBiletTest" />
         <item itemvalue="JUnit.PrezenterBiletTest.createBiletUlgowyTest" />
         <item itemvalue="JUnit.All in ITEs5-Findbus" />
-        <item itemvalue="JUnit.iBiletTest.equals" />
       </list>
     </recent_temporary>
   </component>
@@ -200,12 +191,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738061272083</updated>
-      <workItem from="1738061297286" duration="4483000" />
+      <workItem from="1738061297286" duration="11413000" />
     </task>
+    <task id="LOCAL-00001" summary="Junit testy 2/4">
+      <option name="closed" value="true" />
+      <created>1738065863494</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738065863494</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Junit testy 2/4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Junit testy 2/4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -242,6 +246,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Model/BiletUlgowy.java</url>
           <line>48</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/FunkcjeAplikacji.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

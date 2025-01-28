@@ -56,4 +56,8 @@ public class BiletUlgowy implements iBilet {
 	public int hashCode(){
 		return this.id;
 	}
+	@Override
+	public String toString() {
+		return String.format("\tWażny przez: %ds \n\t Cena biletu: %f zł\n", this.czas, this.cena);
+	}
 }

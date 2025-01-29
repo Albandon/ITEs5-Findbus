@@ -11,8 +11,8 @@ public class PrezenterPrzystanek implements IPrezenterPrzystanek {
 	private Set<Przystanek> przystanki;
 	private Przystanek przystanek;
 
-	public PrezenterPrzystanek() {
-		this.przystanki = new HashSet<>();  // Initialize the Set here
+	public PrezenterPrzystanek(Set<Przystanek> bazaDanych) {
+		this.przystanki = bazaDanych;  // Initialize the Set here
 	}
 	/**
 	 * 

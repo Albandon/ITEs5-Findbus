@@ -1,7 +1,9 @@
 package org.example.Presenter;
 
+import mockit.Mocked;
 import org.example.Model.BiletNormalny;
 import org.example.Model.BiletUlgowy;
+import org.example.Model.iBilet;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Assertions.*;
@@ -10,15 +12,22 @@ import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 
+import java.util.HashSet;
+import java.util.Set;
+
 import static org.junit.jupiter.api.Assertions.*;
 @Tag("Control")
 @TestMethodOrder(OrderAnnotation.class)
 class PrezenterBiletTest{
     static PrezenterBilet Prezenter;
 
+    @Mocked
+    private static Set<iBilet> bazaDanych;
+
     @BeforeAll
     static void setUp() {
-        Prezenter = new PrezenterBilet();
+        bazaDanych = new HashSet<>();
+        Prezenter = new PrezenterBilet(bazaDanych);
     }
 
     @Test

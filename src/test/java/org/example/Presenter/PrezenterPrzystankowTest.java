@@ -1,19 +1,33 @@
 package org.example.Presenter;
 
+import mockit.Mocked;
 import org.example.Model.BiletNormalny;
 import org.example.Model.BiletUlgowy;
 import org.example.Model.Przystanek;
+import org.example.Model.iBilet;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 class PrezenterPrzystankowTest {
-    PrezenterPrzystanek Prezenter = new PrezenterPrzystanek();
+    static PrezenterPrzystanek Prezenter;
+
+    @Mocked
+    private static Set<Przystanek> bazaDanych;
+
+    @BeforeAll
+    static void setUp() {
+        bazaDanych = new HashSet<>();
+        Prezenter = new PrezenterPrzystanek(bazaDanych);
+    }
+
 
     @Test
     @Tag("Add")

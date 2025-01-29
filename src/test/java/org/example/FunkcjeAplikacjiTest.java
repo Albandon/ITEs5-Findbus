@@ -1,6 +1,8 @@
 package org.example;
 
+import org.example.Model.Przystanek;
 import org.example.Model.Ulubione;
+import org.example.Model.iBilet;
 import org.example.Presenter.PrezenterBilet;
 import org.example.Presenter.PrezenterPrzystanek;
 import org.example.Presenter.PrezenterUlubione;
@@ -8,19 +10,34 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
+import mockit.*;
+
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+
+
+
+
+
+
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 @Tag("Control")
 class FunkcjeAplikacjiTest {
     public static FunkcjeAplikacji funkcjeAplikacji;
 
+    @Mocked
+    private static Set<iBilet> bazaDanychBilety;
+    @Mocked
+    private static Set<Przystanek> bazaDanychPrzystanki;
+
     @BeforeAll
     static void setUp(){
         funkcjeAplikacji = new FunkcjeAplikacji();
-        FunkcjeAplikacji.prezenterBiletow = new PrezenterBilet();
+        FunkcjeAplikacji.prezenterBiletow = new PrezenterBilet(bazaDanychBilety);
         FunkcjeAplikacji.prezenterUlubione = new PrezenterUlubione();
-        FunkcjeAplikacji.prezenterPrzystankow = new PrezenterPrzystanek();
+        FunkcjeAplikacji.prezenterPrzystankow = new PrezenterPrzystanek(bazaDanychPrzystanki);
         FunkcjeAplikacji.prezenterBiletow.addBilet(
                 FunkcjeAplikacji.prezenterBiletow.createBilet(900,2,3.20f,0)
         );

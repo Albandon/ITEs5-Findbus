@@ -8,15 +8,17 @@ import org.example.Presenter.PrezenterUlubione;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.example.Model.iBilet.count;
 
 // TODO - Walidacje Danych
 public class FunkcjeAplikacji implements IInterakcjaZUzytkownikiem {
-
-	public static PrezenterBilet prezenterBiletow = new PrezenterBilet();
-	public static PrezenterPrzystanek prezenterPrzystankow = new PrezenterPrzystanek();
+	private static Set<iBilet> bazaDanychBilety;
+	private static Set<Przystanek> bazaDanychPrzystanki;
+	public static PrezenterBilet prezenterBiletow = new PrezenterBilet(bazaDanychBilety);
+	public static PrezenterPrzystanek prezenterPrzystankow = new PrezenterPrzystanek(bazaDanychPrzystanki);
 	public static PrezenterUlubione prezenterUlubione = new PrezenterUlubione();
 	public static boolean TransactionSuccesfull = false;
 

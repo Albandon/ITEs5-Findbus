@@ -9,8 +9,8 @@ public class PrezenterBilet implements IPrezenterBilet {
 
 	private Set<iBilet> bilety;
 
-	public PrezenterBilet() {
-		this.bilety = new HashSet<>();  // Initialize the Set here
+	public PrezenterBilet(Set<iBilet> bazaDanych) {
+		this.bilety = bazaDanych;  // Initialize the Set here
 	}
 
 	/**
@@ -18,6 +18,7 @@ public class PrezenterBilet implements IPrezenterBilet {
 	 * @param id
 	 */
 	public boolean removeBilet(int id) {
+		if(bilety == null) return false;
 		for (iBilet bilet : bilety) {
 			if(bilet.getID()==id) {
 				bilety.remove(bilet);
